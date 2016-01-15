@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <feed xmlns="http://www.w3.org/2005/Atom">
+
+     ◊(define posts (children here))
+
+     <title>My Short Stories Blog</title>
+     <subtitle>The best short stories of Phillip K. Dick</subtitle>
+     <link href="◊(pagenode-url here)" rel="self"/>
+     <link href="◊|root-url|"/>
+     <updated>◊(post-date-rfc3339 (car posts))</updated>
+     <author>
+       <name>Phillip K. Dick</name>
+     </author>
+     <id>◊(uuid here)</id>
+
+     ◊(map (λ (post) ; potentially change to a for comprehension, I think
+       (->html       ; the syntax and intention is clearer for a novice to parse
+        `((entry 
+           "\n\t" (title ,(title post)) 
+           "\n\t" (link [[href ,(pagenode-url post)]]) 
+           "\n\t" (id ,(uuid post))
+           "\n\t" (updated ,(post-date-rfc-3339 post)) 
+           "\n\t" (summary [[type "html"]] ,(summary post))
+           "\n")
+           "\n"))) 
+         posts)
+   </feed>

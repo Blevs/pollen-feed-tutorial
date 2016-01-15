@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <feed xmlns="http://www.w3.org/2005/Atom">
+
+     <title>My Short Stories Blog</title>
+     <subtitle>The best short stories of Phillip K. Dick</subtitle>
+     <link href="http://example.com/pkd/blog/atom.xml" rel="self"/>
+     <link href="http://example.com/pkd/blog/"/>
+     <updated>post-date-rfc3339variable.html</updated>
+     <author>
+       <name>Phillip K. Dick</name>
+     </author>
+     <id>urn:uuid:6463c846-128f-443e-8444-32e95a196742</id>
+
+     <entry>
+     	<title>The Variable Man</title>
+     	<link href="http://example.com/pkd/blog/variable.html" />
+     	<id>urn:uuid:6b773c5f-d840-4bfb-9c0b-2372d9009e61</id>
+     	<updated>2016-01-02T12:30:00</updated>
+     	<summary type="html"><p>He fixed things—clocks, refrigerators, vidsenders and destinies. But he had no business in the future, where the calculators could not handle him. He was Earth’s only hope—and its sure failure!</p></summary>
+     </entry>
+     <entry>
+     	<title>The Eyes Have It</title>
+     	<link href="http://example.com/pkd/blog/eyes.html" />
+     	<id>urn:uuid:d0118878-2215-43f2-9595-1f473d688d67</id>
+     	<updated>2016-01-01T20:00:00</updated>
+     	<summary type="html"><p>A little whimsy, now and then, makes for good balance. Theoretically, you could find this type of humor anywhere. But only a topflight science-fictionist, we thought, could have written this story, in just this way...</p></summary>
+     </entry>
+     <entry>
+     	<title>Beyond Lies the Wub</title>
+     	<link href="http://example.com/pkd/blog/wub.html" />
+     	<id>urn:uuid:ecc9e8ca-c8b1-4b58-8c8b-60bccf7d0fad</id>
+     	<updated>2015-12-25T18:20:00</updated>
+     	<summary type="html"><p>The slovenly wub might well have said: Many men talk like philosophers and live like fools.</p></summary>
+     </entry>
+
+   </feed>
